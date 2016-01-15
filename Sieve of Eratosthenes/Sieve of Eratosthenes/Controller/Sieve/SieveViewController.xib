@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Light.otf">
+            <string>ProximaNova-Light</string>
+            <string>ProximaNova-Light</string>
+            <string>ProximaNova-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SieveViewController">
+            <connections>
+                <outlet property="collection" destination="HUU-nf-f5u" id="Ovx-Ql-Sil"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADc-ud-x8S">
+                    <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh4-rm-zUG">
+                            <rect key="frame" x="0.0" y="0.0" width="106.5" height="60"/>
+                            <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPOSITE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDF-Vh-0Jx">
+                            <rect key="frame" x="106.5" y="0.0" width="107" height="60"/>
+                            <color key="backgroundColor" red="0.39215686274509803" green="0.70980392156862748" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOT VISITED" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8X-J9-vsX">
+                            <rect key="frame" x="213" y="0.0" width="106.5" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cDF-Vh-0Jx" firstAttribute="height" secondItem="uh4-rm-zUG" secondAttribute="height" id="2Ie-3P-0Vb"/>
+                        <constraint firstItem="cDF-Vh-0Jx" firstAttribute="leading" secondItem="uh4-rm-zUG" secondAttribute="trailing" id="8bW-88-n0n"/>
+                        <constraint firstAttribute="bottom" secondItem="g8X-J9-vsX" secondAttribute="bottom" id="GPV-aM-cqZ"/>
+                        <constraint firstItem="g8X-J9-vsX" firstAttribute="leading" secondItem="cDF-Vh-0Jx" secondAttribute="trailing" id="Gvs-FJ-FQu"/>
+                        <constraint firstItem="cDF-Vh-0Jx" firstAttribute="width" secondItem="uh4-rm-zUG" secondAttribute="width" id="UH6-wg-Iks"/>
+                        <constraint firstItem="cDF-Vh-0Jx" firstAttribute="top" secondItem="ADc-ud-x8S" secondAttribute="top" id="Vt9-ad-bmU"/>
+                        <constraint firstAttribute="bottom" secondItem="cDF-Vh-0Jx" secondAttribute="bottom" id="XDv-aa-CYA"/>
+                        <constraint firstAttribute="trailing" secondItem="g8X-J9-vsX" secondAttribute="trailing" id="afj-qg-Q8e"/>
+                        <constraint firstItem="uh4-rm-zUG" firstAttribute="leading" secondItem="ADc-ud-x8S" secondAttribute="leading" id="cOR-24-UqF"/>
+                        <constraint firstItem="uh4-rm-zUG" firstAttribute="top" secondItem="ADc-ud-x8S" secondAttribute="top" id="kp1-X6-dHV"/>
+                        <constraint firstItem="g8X-J9-vsX" firstAttribute="width" secondItem="uh4-rm-zUG" secondAttribute="width" id="umt-gd-QBo"/>
+                        <constraint firstItem="g8X-J9-vsX" firstAttribute="height" secondItem="uh4-rm-zUG" secondAttribute="height" id="val-sz-9Mc"/>
+                        <constraint firstAttribute="height" constant="60" id="xHJ-JB-CUm"/>
+                        <constraint firstItem="g8X-J9-vsX" firstAttribute="top" secondItem="ADc-ud-x8S" secondAttribute="top" id="yhb-rG-QrH"/>
+                        <constraint firstAttribute="bottom" secondItem="uh4-rm-zUG" secondAttribute="bottom" id="yxz-GT-2sJ"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HUU-nf-f5u">
+                    <rect key="frame" x="10" y="10" width="300" height="488"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cl2-37-REd">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TpB-6Y-zia"/>
+                        <outlet property="delegate" destination="-1" id="fus-Vh-3k2"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ADc-ud-x8S" firstAttribute="top" secondItem="HUU-nf-f5u" secondAttribute="bottom" constant="10" id="0rQ-Ju-vkj"/>
+                <constraint firstAttribute="trailing" secondItem="HUU-nf-f5u" secondAttribute="trailing" constant="10" id="AQf-50-Y28"/>
+                <constraint firstItem="ADc-ud-x8S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CsX-LI-8gU"/>
+                <constraint firstAttribute="trailing" secondItem="ADc-ud-x8S" secondAttribute="trailing" id="OGf-EE-3ym"/>
+                <constraint firstAttribute="bottom" secondItem="ADc-ud-x8S" secondAttribute="bottom" id="jLX-Lh-aLr"/>
+                <constraint firstItem="HUU-nf-f5u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="nBz-Xt-0zA"/>
+                <constraint firstItem="HUU-nf-f5u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="vVi-nU-gHk"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
